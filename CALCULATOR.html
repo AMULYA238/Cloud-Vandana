@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>CALCULATOR</title>
+<link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+  <div class="container">
+  <table  >
+ <tr>
+    <td colspan="3"><input id="display" readonly></td>
+    <td><button  onclick="clearDisplay('AC')" style="background-color: teal;">AC</button></td>
+  </tr>
+  <tr>
+    <td> <button onclick="appendToDisplay('9')">9</button> </td>
+    <td><button onclick="appendToDisplay('8')">8</button></td>
+    <td><button onclick="appendToDisplay('7')">7</button></td>
+    <td><button onclick="appendToDisplay('+')" style="background-color: gray;">+</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="appendToDisplay('4')">4</button></td>
+    <td><button onclick="appendToDisplay('5')">5</button></td>
+    <td><button onclick="appendToDisplay('6')">6</button></td>
+    <td><button onclick="appendToDisplay('-')" style="background-color: gray;">-</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="appendToDisplay('1')">1</button></td>
+    <td><button onclick="appendToDisplay('2')">2</button></td>
+    <td><button onclick="appendToDisplay('3')">3</button></td>
+    <td><button onclick="appendToDisplay('*')" style="background-color: gray;">*</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="appendToDisplay('.')">.</button></td>
+    <td><button onclick="appendToDisplay('0')">0</button></td>
+    <td><button onclick="calculateResult('=')">=</button></td>
+    <td><button onclick="appendToDisplay('/')" style="background-color: gray;">/</button></td>
+  </tr>
+</table> 
+</div>
+
+<script src="CALCULATOR.js"></script>
+</body>
+</html> 
